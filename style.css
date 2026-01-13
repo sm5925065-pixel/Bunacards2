@@ -106,7 +106,7 @@ body {
     border: 1px dashed #ffcc00;
     padding: 16px;
     margin: 10px auto;
-    width: 85%; /* ወደ መሃል እንዲመጣ ተስተካክሏል */
+    width: 90%; /* ወደ መሃል እንዲመጣ ተስተካክሏል */
     border-radius: 10px;
     display: flex;
     align-items: center;
