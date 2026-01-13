@@ -153,3 +153,49 @@ body {
     font-size: 16px !important; /* ጽሁፉ በጣም ትልቅ ከሆነ ትንሽ ቀንስለት */
     word-break: break-all; /* በጣም ረጅም ከሆነ እንዲታጠፍ ያደርገዋል */
 }
+/* 1. የካርታው መያዣ ሳጥን */
+.map-embed-container {
+    width: 90% !important; /* ከኮንቴይነሩ ጋር እኩል ለማድረግ */
+    max-width: 400px;
+    margin: 15px auto !important; /* መሃል ላይ እንዲሆን */
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid #333;
+}
+
+/* 2. የሰርቪስ ሳጥኖች */
+.service-box {
+    background: #111 !important;
+    border: 1px dashed #ffcc00 !important;
+    padding: 15px !important;
+    margin: 10px auto !important; /* መሃል ላይ ያሰልፈዋል */
+    width: 90% !important; /* ከContact ሳጥን ጋር እኩል ስፋት */
+    max-width: 400px;
+    border-radius: 10px;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 15px;
+    box-sizing: border-box; /* ስፋቱ እንዳይበላሽ */
+}
+
+/* 3. ከካርታ ስር ያለው አዝራር */
+.map-actions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.add-to-contact-btn {
+    background-color: #f8f9fa !important; /* በምስሉ መሰረት ነጭ/ግራጫ */
+    color: #000 !important;
+    border: 1px solid #ccc;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
