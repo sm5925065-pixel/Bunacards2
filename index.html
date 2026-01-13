@@ -3,51 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solomon Befikadu | Digital Card</title>
+    <title>Solomon Befikadu | Premium Card</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="vcard-container">
-        <div class="vcard-header">
-            <img src="https://bunacard.tech/assets/images/default_cover_image.jpg" class="cover-photo" alt="Cover">
-            <div class="profile-wrapper">
-                <img src="pro.jpg" class="profile-img" alt="Solomon">
+        <header class="vcard-header">
+            <div class="profile-img-wrapper">
+                <img src="pro.jpg" alt="Solomon" class="profile-img">
             </div>
+            <h1 class="name-gold">Solomon Befikadu</h1>
+            <p class="role">Graphics Designer & Video Editor</p>
+            <p class="bio">iam graphics designer</p>
+        </header>
+
+        <div class="button-group">
+            <a href="https://t.me/sm5925065" target="_blank" class="btn telegram-btn">
+                <i class="fab fa-telegram"></i> Telegram
+            </a>
+            <a href="https://wa.me/251939929575" target="_blank" class="btn whatsapp-btn">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="tel:+251960699957" class="btn call-btn">
+                <i class="fas fa-phone"></i> ይደውሉልኝ
+            </a>
         </div>
 
-        <div class="vcard-body">
-            <h1 class="animate-text">Solomon Befikadu</h1>
-            <p class="subtitle">Graphics Designer & Video Editor</p>
-            <p class="bio">ፕሮፌሽናል የግራፊክስ ዲዛይን እና የቪዲዮ ኤዲቲንግ አገልግሎት እሰጣለሁ።</p>
-
-            <div class="action-buttons">
-                <a href="https://t.me/sm5925065" target="_blank" class="btn telegram">
-                    <i class="fab fa-telegram"></i> Telegram
-                </a>
-
-                <a href="https://wa.me/251939929575" target="_blank" class="btn whatsapp">
-                    <i class="fab fa-whatsapp"></i> WhatsApp
-                </a>
-
-                <a href="tel:+251939929575" class="btn call">
-                    <i class="fas fa-phone"></i> ይደውሉልኝ
-                </a>
+        <section class="info-section">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-card">
+                <i class="fas fa-envelope"></i>
+                <span>sm5925065@gmail.com</span>
             </div>
-
-            <div class="services-section">
-                <h3>Our Services</h3>
-                <div class="service-item">
-                    <i class="fas fa-paint-brush"></i>
-                    <span>Branding & Logo Design</span>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-video"></i>
-                    <span>Professional Video Editing</span>
-                </div>
+            <div class="contact-card">
+                <i class="fas fa-location-dot"></i>
+                <span>Jimma, Ethiopia</span>
             </div>
-        </div>
+        </section>
+
+        <section class="info-section">
+            <h2 class="section-title">Our Services</h2>
+            <div class="service-box">
+                <i class="fas fa-paint-brush"></i> Branding & Logo Design
+            </div>
+            <div class="service-box">
+                <i class="fas fa-video"></i> Professional Video Editing
+            </div>
+        </section>
+
+        <footer class="footer-fixed">
+            <button class="add-to-contact"><i class="fas fa-user-plus"></i> Add to Contact</button>
+        </footer>
     </div>
 
     <script src="script.js"></script>
