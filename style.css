@@ -67,53 +67,42 @@ body {
 /* አኒሜሽን */
 @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(255, 204, 0, 0.4); } 70% { box-shadow: 0 0 0 15px rgba(255, 204, 0, 0); } 100% { box-shadow: 0 0 0 0 rgba(255, 204, 0, 0); } }
-/* map */
-/* የካርታ አዝራር ፕሪሚየም ስታይል */
-.map-link-premium {
-    display: block;
-    background: #111111; /* ጥቁር ግራጫ ዳራ */
-    border: 1px dashed #ffcc00; /* ቢጫ ነጥብ ጣል ጠርዝ */
-    border-radius: 15px;
-    margin: 15px 25px;
-    text-decoration: none;
-    color: #ffffff;
+/* የካርታ መያዣ ሳጥን */
+.map-embed-container {
+    margin: 15px 20px;
+    border-radius: 15px; /* የተጠጋጋ ጠርዝ */
     overflow: hidden;
-    transition: all 0.4s ease;
+    border: 2px solid #333; /* ቀጭን ጥቁር ጠርዝ */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
-.map-content {
-    padding: 20px;
-    display: flex;
+/* ከካርታው ስር ያለው አዝራር ስታይል */
+.map-actions {
+    text-align: center;
+    margin-top: -30px; /* አዝራሩ ካርታው ላይ ትንሽ እንዲያርፍ */
+    position: relative;
+    z-index: 10;
+}
+
+.add-to-contact-btn {
+    background-color: #5a6268; /* ግራጫ ቀለም */
+    color: #ffcc00; /* ቢጫ ጽሁፍ */
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-flex;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
+    transition: 0.3s;
 }
 
-.map-content i {
-    color: #ffcc00; /* ቢጫ አይኮን */
-    font-size: 28px;
+.add-to-contact-btn i {
+    color: #ffcc00;
 }
 
-.text-wrapper {
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-}
-
-.text-wrapper strong {
-    color: #ffcc00; /* ርዕሱ በቢጫ */
-    font-size: 18px;
-}
-
-.map-footer {
-    background: #1a1a1a;
-    padding: 8px;
-    font-size: 12px;
-    color: #aaaaaa;
-    border-top: 1px solid #333;
-}
-
-.map-link-premium:hover {
-    transform: translateY(-5px); /* ሆቨር ሲደረግ ከፍ ይላል */
-    border-style: solid; /* መስመሩ ይገጥማል */
-    box-shadow: 0 10px 20px rgba(255, 204, 0, 0.2);
+.add-to-contact-btn:hover {
+    background-color: #495057;
+    transform: scale(1.05);
 }
