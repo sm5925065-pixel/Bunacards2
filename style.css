@@ -61,19 +61,25 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 14px;
-    margin: 10px auto; 
-    width: 85%; /* ስፋቱ ተገድቧል */
+    padding: 16px; /* ቁመታቸው እንዲጨምር */
+    margin: 12px auto; /* መሃል ላይ እንዲሆኑ */
+    width: 85%; /* ስፋታቸው እንዲጨምር */
+    max-width: 350px; /* በጣም እንዳይሰፉ ገደብ ያስቀምጣል */
     border-radius: 12px;
     text-decoration: none;
     font-weight: bold;
     color: #fff;
-    border: 1px solid #ffcc00;
+    border: 1px solid #ffcc00; /* ወርቃማ ጠርዝ */
     background: #1a1a1a;
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
+    box-sizing: border-box; /* ስፋቱ እንዳይበላሽ ይረዳል */
 }
 
-.btn:hover { background: #ffcc00; color: #000; transform: translateY(-3px); }
+/* አዝራሩ ሲነካ የሚኖረው ለውጥ */
+.btn:hover {
+    background: #ffcc00;
+    color: #000;
+    transform: translateY(-3px);
 
 /* 5. ሳጥኖች (Cards) */
 .contact-card, .service-box {
