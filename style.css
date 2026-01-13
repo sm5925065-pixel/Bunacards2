@@ -67,21 +67,38 @@ body {
 }
 
 /* የአዝራሮች ስፋት እና ዲዛይን */
+
 .btn {
     display: flex !important;
-    align-items: center;
-    justify-content: center;
-    width: 90% !important; /* ስፋቱን ወደ 90% ከፍ አድርገነዋል */
-    max-width: 400px; /* በትልቅ ስክሪን ላይ በጣም እንዳይሰፋ */
-    padding: 16px !important; /* ቁመቱን ይጨምራል */
-    margin: 10px auto !important; /* መሃል ላይ ያሰልፈዋል */
-    border-radius: 12px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #fff;
-    border: 1px solid #ffcc00; /* ወርቃማ ጠርዝ */
-    background: #1a1a1a;
-    box-sizing: border-box; /* ፓዲንግ ስፋቱን እንዳያበላሸው */
+    align-items: center !important;
+    justify-content: center !important;
+    width: 90% !important;
+    padding: 16px !important;
+    margin: 10px auto !important;
+    border-radius: 12px !important;
+    background: #1a1a1a !important;
+    border: 1px solid #ffcc00 !important;
+    color: #fff !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+    
+    /* አኒሜሽኑ እንዲሰራ ይህ በጣም አስፈላጊ ነው */
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important; 
+    position: relative;
+    overflow: hidden;
+}
+
+/* 2. አዝራሩ ሲነካ (Hover) የሚፈጠር አኒሜሽን */
+.btn:hover {
+    background: #ffcc00 !important; /* ቀለሙ ወደ ቢጫ ይቀየራል */
+    color: #000 !important; /* ጽሁፉ ጥቁር ይሆናል */
+    transform: translateY(-5px) scale(1.02) !important; /* ወደ ላይ ከፍ ይላል */
+    box-shadow: 0 10px 20px rgba(255, 204, 0, 0.3) !important; /* የብርሃን ጥላ ይጨምራል */
+}
+
+/* 3. አዝራሩ ሲጫን (Click) የሚፈጠር ለውጥ */
+.btn:active {
+    transform: translateY(-2px) scale(0.98) !important; /* ትንሽ ወደ ውስጥ ይገባል */
 }
 /* 5. ሳጥኖች (Cards) */
 .contact-card, .service-box {
