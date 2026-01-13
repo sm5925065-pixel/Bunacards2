@@ -104,7 +104,7 @@ body {
 .contact-card, .service-box {
     background: #111;
     border: 1px dashed #ffcc00;
-    padding: 15px;
+    padding: 16px;
     margin: 10px auto;
     width: 85%; /* ወደ መሃል እንዲመጣ ተስተካክሏል */
     border-radius: 10px;
