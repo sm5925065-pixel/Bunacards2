@@ -1,0 +1,60 @@
+/* አጠቃላይ ገጽታ */
+body {
+    background: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.vcard-container {
+    width: 90%;
+    max-width: 400px;
+    background: #fff;
+    border-radius: 25px; /* */
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    animation: fadeIn 0.8s ease-in;
+}
+
+/* Header & Profile */
+.cover-photo { width: 100%; height: 140px; object-fit: cover; }
+.profile-wrapper { text-align: center; margin-top: -60px; }
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    transition: transform 0.3s;
+}
+.profile-img:hover { transform: scale(1.1); }
+
+/* Buttons */
+.vcard-body { padding: 20px; text-align: center; }
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.telegram { background: #0088cc; }
+.whatsapp { background: #25d366; }
+.call { background: #333; }
+
+.btn:hover { opacity: 0.8; transform: translateY(-2px); }
+.btn i { margin-right: 10px; }
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
