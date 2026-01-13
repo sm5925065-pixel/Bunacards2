@@ -15,8 +15,19 @@ body {
     background: #000;
     text-align: center;
     animation: fadeIn 1s ease-in;
+    
+    /* ይህንን ጨምር - ሁሉንም መረጃዎች ወደ መሃልና ወደ ታች ይደረድራል */
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 0 auto;
 }
 
+/* በተጨማሪም ይህንን ፈልገህ አስተካክል */
+.contact-card, .service-box {
+    width: 85%; /* ስፋቱ በትክክል እንዲቀመጥ */
+    margin: 10px auto; /* ወደ መሃል እንዲመጣ */
+}
 /* ፎቶ እና ስም */
 .profile-img {
     width: 130px;
