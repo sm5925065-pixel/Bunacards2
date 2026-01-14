@@ -217,28 +217,45 @@ body {
     display: block;
     width: 100%;
 }
+/* 1. አዝራሮቹ ሲጫኑ እንዲበሩ (Glow Effect) */
+.btn:active {
+    background-color: #ffdb4d !important; /* ደማቅ ወርቃማ ቀለም */
+    transform: scale(0.95) !important; /* ትንሽ ወደ ውስጥ የመግባት ስሜት */
+    box-shadow: 0 0 30px rgba(255, 204, 0, 0.9) !important; /* ደማቅ የወርቅ ነጸብራቅ */
+    color: #000 !important;
+    transition: 0.1s !important;
+}
+
+/* 2. "Add to Contact" አዝራር አኒሜሽን */
+.add-to-contact-link {
+    text-decoration: none !important;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
 .add-to-contact {
-    transition: all 0.2s ease !important;
+    background: #6c757d !important; /* መደበኛው ቀለም */
+    color: #fff !important;
+    padding: 12px 40px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    transition: all 0.2s ease-in-out !important;
 }
 
-/* ሲጫኑት የሚሆን አኒሜሽን */
+/* Add to Contact ሲጫን የሚፈጠር ለውጥ */
 .add-to-contact:active {
-    transform: scale(0.95) !important;
-    background-color: #5a6268 !important;
-}
-/* 1. አዝራሩ ሲነካ (Hover) የሚሆን */
-.btn:hover {
-    background-color: #ffcc00 !important; /* ወርቃማ ቀለም */
+    background-color: #ffcc00 !important; /* ሲጫን ወደ ወርቃማ ይቀየራል */
     color: #000 !important;
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(255, 204, 0, 0.4);
+    transform: scale(0.95) !important;
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.7) !important;
 }
 
-/* 2. አዝራሩ ሲጫን (Click) የሚሆን ደማቅ ወርቃማ አኒሜሽን */
-.btn:active {
-    background-color: #ffdb4d !important; /* ይበልጥ ደማቅ ወርቃማ ቀለም */
-    transform: scale(0.95) !important; /* አዝራሩ ትንሽ ወደ ውስጥ ይገባል */
-    box-shadow: 0 0 20px rgba(255, 219, 77, 0.8) !important; /* የብርሃን ነጸብራቅ ይጨምራል */
-    transition: 0.1s !important; /* ፈጣን ምላሽ እንዲሰጥ */
+/* 3. ወጥ የሆነ የሳጥኖች ስፋት (Contact, Location, Services) */
+.contact-card, .service-box, .map-embed-container {
+    width: 90% !important; /* ሁሉም ሳጥኖች እኩል እንዲሆኑ */
+    margin: 10px auto !important;
+    box-sizing: border-box;
 }
