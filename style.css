@@ -169,7 +169,7 @@ body {
     border: 1px dashed #ffcc00 !important;
     padding: 15px !important;
     margin: 10px auto !important; /* መሃል ላይ ያሰልፈዋል */
-    width: 100% !important; /* ከContact ሳጥን ጋር እኩል ስፋት */
+    width: 90% !important; /* ከContact ሳጥን ጋር እኩል ስፋት */
     max-width: 400px;
     border-radius: 10px;
     display: flex !important;
