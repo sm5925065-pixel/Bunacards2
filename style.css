@@ -269,3 +269,33 @@ body {
     margin: 10px auto !important;
     box-sizing: border-box;
 }
+/* 1. የአዝራሮች መደበኛ ገጽታ */
+.btn {
+    background-color: #1a1a1a !important;
+    border: 1px solid #ffcc00 !important;
+    color: #fff !important;
+    transition: all 0.3s ease-in-out !important; /* ብርሃኑ ቀስ ብሎ እንዲመጣ */
+}
+
+/* 2. ኮርሰሩ አዝራሩ ላይ ሲያርፍ (Hover) የሚበራው እዚህ ጋር ነው */
+.btn:hover {
+    background-color: #ffcc00 !important; /* ቀለሙ ወደ ወርቃማ ይቀየራል */
+    color: #000 !important;
+    transform: translateY(-5px) !important; /* ትንሽ ከፍ ይላል */
+    /* ደማቅ የወርቅ ብርሃን ነጸብራቅ */
+    box-shadow: 0 0 25px rgba(255, 204, 0, 0.8), 0 0 50px rgba(255, 204, 0, 0.4) !important;
+}
+
+/* 3. የኢሜይል ሳጥኑም ኮርሰሩ ሲያርፍበት እንዲበራ */
+.email-link:hover {
+    background-color: #ffcc00 !important;
+    color: #000 !important;
+    box-shadow: 0 0 25px rgba(255, 204, 0, 0.8) !important;
+    transform: scale(1.02) !important;
+}
+
+/* 4. አዝራሩ ሲጫን (Click) አኒሜሽኑ እንዳይጠፋ */
+.btn:active, .email-link:active {
+    transform: scale(0.95) !important;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5) !important;
+}
