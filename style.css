@@ -199,3 +199,15 @@ body {
     align-items: center;
     gap: 8px;
 }
+/* የኢሜይል ሊንክ ዲዛይን እንዳይበላሽ */
+.email-link {
+    text-decoration: none !important; /* ከስሩ የሚሰመረውን መስመር ለማጥፋት */
+    color: inherit !important; /* የጽሁፉን ቀለም ላለመቀየር */
+    display: flex !important;
+    transition: transform 0.3s ease !important;
+}
+
+.email-link:hover {
+    transform: scale(1.02) !important; /* ሲነካ ትንሽ እንዲያብጥ */
+    background: #222 !important; /* ሲነካ ቀለሙ ትንሽ ጠቆር እንዲል */
+}
