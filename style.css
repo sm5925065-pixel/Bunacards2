@@ -200,22 +200,32 @@ body {
     gap: 8px;
 }
 /* የኢሜይል ሊንክ ዲዛይን እንዳይበላሽ */
+/* 1. የኢሜይል ሳጥን መደበኛ ገጽታ */
 .email-link {
-    text-decoration: none !important; /* ከስሩ የሚሰመረውን መስመር ለማጥፋት */
-    color: inherit !important; /* የጽሁፉን ቀለም ላለመቀየር */
+    text-decoration: none !important;
+    color: inherit !important;
     display: flex !important;
-    transition: transform 0.3s ease !important;
+    transition: all 0.2s ease-in-out !important; /* ለስላሳ አኒሜሽን */
 }
 
+/* 2. ሲነካ (Hover) የሚሆን ለውጥ */
 .email-link:hover {
-    transform: scale(1.02) !important; /* ሲነካ ትንሽ እንዲያብጥ */
-    background: #222 !important; /* ሲነካ ቀለሙ ትንሽ ጠቆር እንዲል */
+    transform: translateY(-3px) !important;
+    background-color: #222 !important;
+    box-shadow: 0 5px 15px rgba(255, 204, 0, 0.2) !important;
 }
-/* add contact */
-.add-to-contact-link {
-    text-decoration: none !important;
-    display: block;
-    width: 100%;
+
+/* 3. ሲጫን (Click) ደምቆ የሚበራበት ክፍል */
+.email-link:active {
+    background-color: #ffdb4d !important; /* ሳጥኑ ወደ ወርቃማ ይቀየራል */
+    color: #000 !important; /* ጽሁፉ ጥቁር ይሆናል */
+    transform: scale(0.95) !important; /* ትንሽ ወደ ውስጥ ይገባል */
+    box-shadow: 0 0 30px rgba(255, 204, 0, 0.9) !important; /* ደማቅ የወርቅ ብርሃን ነጸብራቅ */
+}
+
+/* በሳጥኑ ውስጥ ያለው አይከን (Icon) ሲጫን ጥቁር እንዲሆን */
+.email-link:active i {
+    color: #000 !important;
 }
 /* 1. አዝራሮቹ ሲጫኑ እንዲበሩ (Glow Effect) */
 .btn:active {
