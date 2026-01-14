@@ -227,3 +227,18 @@ body {
     transform: scale(0.95) !important;
     background-color: #5a6268 !important;
 }
+/* 1. አዝራሩ ሲነካ (Hover) የሚሆን */
+.btn:hover {
+    background-color: #ffcc00 !important; /* ወርቃማ ቀለም */
+    color: #000 !important;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 204, 0, 0.4);
+}
+
+/* 2. አዝራሩ ሲጫን (Click) የሚሆን ደማቅ ወርቃማ አኒሜሽን */
+.btn:active {
+    background-color: #ffdb4d !important; /* ይበልጥ ደማቅ ወርቃማ ቀለም */
+    transform: scale(0.95) !important; /* አዝራሩ ትንሽ ወደ ውስጥ ይገባል */
+    box-shadow: 0 0 20px rgba(255, 219, 77, 0.8) !important; /* የብርሃን ነጸብራቅ ይጨምራል */
+    transition: 0.1s !important; /* ፈጣን ምላሽ እንዲሰጥ */
+}
